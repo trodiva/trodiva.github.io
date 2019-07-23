@@ -1,0 +1,44 @@
+# Site settings
+title:          Trodiva's Blog
+description:    "Quantitative Modeling-Data Science-Applied Mathematics"
+#baseurl:        "/tale"
+url:            "https://trodiva.github.io/"
+
+# Google Analytics
+google_analytics: UA—XXXXXXXX-X
+
+# Author
+author:
+  name:         DinhVanTrong
+  url:          
+  email:        dinhvantrong1991@gmail.com
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+  mathjax: true
+
+  
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       10
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
